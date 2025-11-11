@@ -1,0 +1,45 @@
+# Physical scales (from user's params.yaml)
+U_max: 25.0            # m/s
+T_max: 7000.0          # N
+Mz_max: 5600.0         # N*m
+L: 10000.0             # map size (m)
+L_scale: 1000.0        # distance normalization in r_shape (m)
+d_safe: 12.0           # safety distance (m)
+R_goal: 20.0           # success radius (m)
+R_success: 10.0        # terminal bonus
+C_step: 0.01           # per-step time penalty
+rho: 1.0               # slack penalty scale inside r_coll
+
+# Reward weights
+w_sh: 1.0
+w_c: 3.0
+w_e: 0.5
+w_s: 0.05
+w_t: 0.01
+w_g: 10.0
+
+# SAC & aux
+gamma: 0.99
+tau: 0.005
+actor_lr: 3.0e-4
+critic_lr: 3.0e-4
+alpha_lr: 3.0e-4
+target_entropy: -3.0
+aux_weight: 0.2
+burn_in: 16
+seq_len: 64
+topN: 16
+include_wind: true
+
+# Throughput
+n_env: 64
+batch: 256
+replay_capacity: 2000000
+gpu_replay: true
+auto_batch: true
+amp: true
+compile: true
+log_interval: 1
+save_every: 2000
+attn_viz_every: 5000
+seed: 42
