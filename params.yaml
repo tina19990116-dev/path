@@ -1,0 +1,78 @@
+{
+  "model": {
+    "M_RB": {
+      "m": 1291.5,
+      "Iz": 5374.7064
+    },
+    "M_A": {
+      "X_udot": -154.98,
+      "Y_vdot": -1033.2,
+      "N_rdot": -644.9647679999999
+    },
+    "D1": {
+      "X_u": -163.33333333333334,
+      "Y_v": -258.3,
+      "N_r": -119.43792
+    },
+    "D2": {
+      "X_uu": -4.666666666666667,
+      "Y_vv": -10.762500000000001,
+      "N_rr": -16112.970873403425
+    },
+    "cross": {
+      "Y_r": 0.0,
+      "N_v": 0.0
+    }
+  },
+  "actuation": {
+    "T_act": {
+      "rudder": 0.25,
+      "rpm": 1.0
+    },
+    "Gamma": {
+      "lever_arm_b": 0.8,
+      "KT": 0.18
+    }
+  },
+  "bounds": {
+    "M_A": {
+      "pct": 0.3
+    },
+    "D1": {
+      "pct": 0.3
+    },
+    "D2": {
+      "pct": 0.5
+    },
+    "T_act": {
+      "pct": 0.2
+    },
+    "KT": {
+      "pct": 0.2
+    }
+  },
+  "checks": {
+    "surge_Umax_error_pct": 0.0,
+    "surge_risetime_s": 9.55,
+    "surge_risetime_target_s": 18.75,
+    "surge_risetime_ok": true,
+    "turn_tau_required_Nm": 4480.000000000001,
+    "turn_tau_available_Nm": 5600.0,
+    "turn_ok": true
+  },
+  "metadata": {
+    "units": {
+      "speed": "mps",
+      "force": "N",
+      "torque": "N*m"
+    },
+    "inputs": {
+      "U_max": 25.0,
+      "r_star": 0.5235987756,
+      "U_turn": 12.0,
+      "a_max": 1.2
+    },
+    "version": "usv_param_fitter v1.0",
+    "timestamp": "2025-11-10T11:49:41.146417Z"
+  }
+}
